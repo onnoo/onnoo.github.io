@@ -1,6 +1,7 @@
 ---
 title: "Ubuntu 명령어"
 date: 2021-09-23
+last_modified_at: 2021-09-26
 categories:
   - code
 tags:
@@ -10,7 +11,7 @@ tags:
 
 자주 사용하는 ubuntu 명령어
 
-##### SSH 키 추가
+### SSH 키 추가
 
 ```bash
 # client
@@ -25,7 +26,7 @@ cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
 
 ```
 
-##### 사용자 추가
+### 사용자 추가
 
 ```bash
 sudo adduser <username>
@@ -36,9 +37,25 @@ cat /etc/group
 sudo usermod -aG docker <username>
 ```
 
-##### 포트 허용
+### 포트 허용
 
 ```bash
 sudo iptables -i input 1 -p tcp --dport <port> -j ACCEPT
 ```
 
+### 외장 USB 마운트
+
+```bash
+# create directory to be mounted
+mkdir ~/usb
+# check usb device name (e.g., sdc1)
+lsblk
+
+# mount usb (option 1)
+sudo mount /dev/sdc1 ~/usb
+# mount usb (option 2)
+# sudo mount -t vfat /dev/sdc1 ~/usb
+
+# unmount usb
+sudo umount /dev/sdc1
+```
