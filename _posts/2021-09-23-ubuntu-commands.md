@@ -19,6 +19,9 @@ ssh-keygen -t rsa
 ls -al ~/.ssh
 scp ~/.ssh/id_rsa.pub <username>@<host>:id_rsa.pub
 
+# client (simple)
+ssh-copy-id -i ~/.ssh/id_rsa.pub <username>@<host>
+
 # server
 mkdir ~/.ssh
 sudo chmod 700 ~/.ssh
