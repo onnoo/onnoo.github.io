@@ -62,3 +62,10 @@ sudo mount /dev/sdc1 ~/usb
 # unmount usb
 sudo umount /dev/sdc1
 ```
+
+### 폴더 용량 확인
+
+```bash
+du -sh ./*
+```
+
