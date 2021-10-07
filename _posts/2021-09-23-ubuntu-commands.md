@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu 명령어"
 date: 2021-09-23
-last_modified_at: 2021-09-26
+last_modified_at: 2021-10-07
 categories:
   - code
 tags:
@@ -66,6 +66,10 @@ sudo umount /dev/sdc1
 ### 폴더 용량 확인
 
 ```bash
+# mounted disk
+df -h
+
+# current working space
 du -sh ./*
 ```
 
