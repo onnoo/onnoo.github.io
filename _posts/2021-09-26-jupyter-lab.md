@@ -5,6 +5,7 @@ categories:
   - python
 tags:
   - jupyter-lab
+  - jupyter
   - environment
 ---
 
