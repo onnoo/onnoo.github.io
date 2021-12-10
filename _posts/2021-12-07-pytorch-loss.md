@@ -18,3 +18,17 @@ PyTorch에서 사용하는 loss obejct에 대한 cheat sheet
 
 Logistic regression에서 처음 접할 수 있었던 손실 함수입니다.
 
+먼저 logistic regression 예제를 하나 살펴보겠습니다.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 100) + np.random.normal(0, 1, (100))
+y = np.linspace(0, 10, 100) + np.random.normal(10, 1, (100))
+
+plt.scatter(x, y)
+plt.show()
+```
+
+(대충 linear 한 직선을 기준으로 noise가 추가된 plot)
