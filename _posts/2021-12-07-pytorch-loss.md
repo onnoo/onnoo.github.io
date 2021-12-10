@@ -31,4 +31,4 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-(대충 linear 한 직선을 기준으로 noise가 추가된 plot)
+<img src="https://user-images.githubusercontent.com/29935117/145578332-36fc76b4-69c9-4523-aefb-f8d7fb68e384.png" width=500px/>
