@@ -11,10 +11,16 @@ tags:
 최신 Nvidia Driver 설치 및 tensorflow 2.7.0 환경 준비
 
 
-# 최신 Nvidia Driver 설치
+## 최신 Nvidia Driver 설치
 ```
 sudo apt install ubuntu-drivers-common
 sudo ubuntu-drivers autoinstall
+```
+
+### 설치 후 gnome 제거
+```
+sudo apt-get remove gnome-*
+sudo apt-get remove ubuntu-desktop --purge
 ```
 
 ## Tensorflow 환경 준비
