@@ -42,3 +42,9 @@ c.ServerApp.root_dir = ''
 ```
 
 > 혹시 ubuntu에서 포트가 막혀있다면 : [ubuntu 포트 허용](http://127.0.0.1:4000/code/ubuntu-commands/#%ED%8F%AC%ED%8A%B8-%ED%97%88%EC%9A%A9)
+
+
+### ipywidgets interact UI가 보이지 않을 때
+
+`jupyter nbextension enable --sys-prefix --py widgetsnbextension`
+
