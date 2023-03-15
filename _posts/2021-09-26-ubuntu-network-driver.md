@@ -11,6 +11,8 @@ tags:
 Ubuntu server 설치 후 네트워크 인식이 되지 않을 때 수동으로 랜카드 드라이버를 잡아주는 방법
 
 
+더 편한 방법!! : [stackoverflow](https://askubuntu.com/questions/1287967/cant-get-rtl8125-realtek-driver-working-on-version-20-04?newreg=a18c1d7687e04c26bc0bfc011bee7be1)
+
 ## Network driver 준비
 
 메인보드의 모델명이나 `lspci` 명령어를 통해 이더넷 컨트롤러를 알아냈다면, 해당 버전의 드라이버를 검색하여 설치한다.
