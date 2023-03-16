@@ -13,7 +13,7 @@ jupyter lab 외부 접속 허용 및 테마 적용
 
 ### 설치
 
-`pip install jupyterlab jupyterlab_darkside_ui`
+`pip install jupyterlab jupyterlab_darkside_ui jupyterlab_legos_ui`
 
 ### config 파일 추가
 
