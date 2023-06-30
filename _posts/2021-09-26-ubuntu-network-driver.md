@@ -75,3 +75,8 @@ network:
 ```
 
 2. `sudo netplan apply` 명령어를 입력한다.
+
+
+## 이슈) ubuntu terminal이 보이지 않을 때
+
+- 참고 : https://askubuntu.com/questions/1250026/ubuntu-20-04-server-suddenly-has-gui-and-no-terminal
