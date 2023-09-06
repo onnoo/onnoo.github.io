@@ -22,7 +22,7 @@ jupyter lab 외부 접속 허용 및 테마 적용
 ### 패스워드 암호화
 
 ```python
-from notebook.auth import passwd
+from jupyter_server.auth import passwd
 passwd(algorithm='sha256')
 # output
 # Enter password: 
