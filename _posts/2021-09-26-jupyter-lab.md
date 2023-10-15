@@ -48,3 +48,5 @@ c.ServerApp.root_dir = ''
 
 `jupyter nbextension enable --sys-prefix --py widgetsnbextension`
 
+### 셀에서 코드 라인 넘버 보이기
+`shift` + `L`
