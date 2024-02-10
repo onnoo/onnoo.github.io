@@ -73,3 +73,13 @@ df -h
 du -sh ./*
 ```
 
+
+### 그룹 공유 폴더 추가
+
+```bash
+sudo groupadd groupname
+sudo usermod -a -G groupname username
+groups username
+sudo chown -R :groupname dirname
+sudo chmod -R g+s dirname   # setgroupid
+```
