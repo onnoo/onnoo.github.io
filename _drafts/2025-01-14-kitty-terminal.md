@@ -31,3 +31,8 @@ map cmd+c        copy_to_clipboard
 map cmd+v        paste_from_clipboard
 map shift+insert paste_from_clipboard
 ```
+
+- ubuntu에서 기본 터미널로 설정하기 ([참고](https://github.com/kovidgoyal/kitty/discussions/5599#discussioncomment-3921574))
+```
+gsettings set org.gnome.desktop.default-applications.terminal exec 'kitty'
+```
