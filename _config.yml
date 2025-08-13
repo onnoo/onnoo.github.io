@@ -1,0 +1,30 @@
+title: Your Blog Title
+email: your-email@example.com
+description: >-
+  A personal blog hosted on GitHub Pages using Jekyll.
+  Write your site description here.
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+
+# GitHub Pages settings
+remote_theme: jekyll/minima
+repository: yourusername/yourusername.github.io
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
