@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: onnoo/onnoo.github.io # Path to your GitHub repository
   branch: main # Branch to update (optional; defaults to master)
 
 # Enable editorial workflow for production
