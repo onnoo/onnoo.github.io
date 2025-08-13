@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Enable editorial workflow for production
+publish_mode: editorial_workflow
+
+# For local development, change backend to:
+# backend:
+#   name: proxy
+#   proxy_url: http://localhost:8081/api/v1
+
+# This line should *not* be indented
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+# This line should *not* be indented
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "drafts"
+    label: "Drafts"
+    folder: "_drafts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Permalink", name: "permalink", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Home Page"
+        name: "index"
+        file: "index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "home"}
+          - {label: "Title", name: "title", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
