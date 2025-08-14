@@ -9,8 +9,7 @@ url: "https://onnoo.github.io"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-plugins:
-  - jekyll-feed
+plugins: []
 
 # GitHub Pages settings
 remote_theme: jekyll/minima
