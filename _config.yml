@@ -12,7 +12,6 @@ highlighter: rouge
 plugins: []
 
 # GitHub Pages settings
-remote_theme: jekyll/minima
 repository: onnoo/onnoo.github.io
 
 # Exclude from processing
