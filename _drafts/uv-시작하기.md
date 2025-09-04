@@ -11,3 +11,21 @@ tags:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+
+## 사용 방법
+
+```bash
+# init python project
+uv init --python ${PYTHON_VERSION}
+
+# sync existing python project
+uv sync
+
+# sync existing python project without updating uv.lock
+uv sync --frozen
+```
+
+
+## Todo
+- [ ] uv 환경 container로 띄우기
+
