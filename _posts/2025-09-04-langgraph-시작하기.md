@@ -26,7 +26,9 @@ uv add langgraph
 
 ## Todo
 - [ ] LangGraph 시리즈 포스트 작성
+  - [ ] LLM 연결하기 (gemini, chatgpt, claude, local)
   - [ ] ainvoke, astream (async)
+  - [ ] agent server endpoint
   - [ ] thread와 run
   - [ ] stream_writer
   - [ ] state
